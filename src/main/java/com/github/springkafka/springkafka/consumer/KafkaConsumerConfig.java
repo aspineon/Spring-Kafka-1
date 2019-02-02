@@ -44,6 +44,7 @@ public class KafkaConsumerConfig {
         ConcurrentKafkaListenerContainerFactory<String, String> factory = new ConcurrentKafkaListenerContainerFactory<>();
         factory.setConsumerFactory(consumerFactory());
         factory.setMessageConverter(new StringJsonMessageConverter()); // Important point to note
+        factory.setConcurrency(kafkaConfiguration.getPartition());
         return factory;
     }
 

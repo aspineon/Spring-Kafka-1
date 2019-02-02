@@ -10,6 +10,7 @@ public class KafkaConfiguration {
     private String topicName;
     private String bootstrapservers;
     private String groupId;
+    private int topicPartition;
 
     public String getTopicName() {
         return topicName;
@@ -33,5 +34,13 @@ public class KafkaConfiguration {
 
     public void setGroupId(String groupId) {
         this.groupId = groupId;
+    }
+
+    public void setTopicPartition(int topicPartition) {
+        this.topicPartition = topicPartition;
+    }
+
+    public Integer getPartition() {
+        return topicPartition;
     }
 }

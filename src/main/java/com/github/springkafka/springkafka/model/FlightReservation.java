@@ -1,16 +1,16 @@
 package com.github.springkafka.springkafka.model;
 
-public class TrainReservation {
+public class FlightReservation {
 
     private String passengerName;
     private String seatNumber;
     private String source;
     private String destination;
 
-    public TrainReservation() {
+    public FlightReservation() {
     }
 
-    public TrainReservation(String passengerName, String seatNumber, String source, String destination) {
+    public FlightReservation(String passengerName, String seatNumber, String source, String destination) {
         this.passengerName = passengerName;
         this.seatNumber = seatNumber;
         this.source = source;
@@ -51,7 +51,7 @@ public class TrainReservation {
 
     @Override
     public String toString() {
-        return "TrainReservation{" +
+        return "FlightReservation{" +
                 "passengerName='" + passengerName + '\'' +
                 ", seatNumber='" + seatNumber + '\'' +
                 ", source='" + source + '\'' +
